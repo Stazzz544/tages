@@ -1,24 +1,21 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit"
-import { ProductCard, StateType } from "../models/TProduct"
+import { createSlice } from "@reduxjs/toolkit";
+import { StateType } from "../models/IProductCard";
 
 
 
-const initialState: StateType = {
-	name: '',
-	count: '',
-	price: '',
-	productCard: [] as Array<ProductCard>,
+
+export const initialState: StateType =  {
+	cards: [],
+	isloading: false,
+	error: ''
 }
 
 export const productCardSlice = createSlice({
 	name: 'productCard',
 	initialState,
 	reducers: {
-		// productCardGet(state, action: PayloadAction<ProductCard[]>) {
-		// 	state.productCard = action.payload
-		// },
+
 	}
 })
 
-export default productCardSlice.reducer
-export const { } = productCardSlice.actions
+export default productCardSlice.reducer;

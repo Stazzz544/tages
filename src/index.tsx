@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import './css/index.css';
-import App from './components/App';
-import { Provider } from 'react-redux';
+import App from './App';
 import { setupStore } from "./redux/store";
+import { Provider } from 'react-redux';
 
 
 const store = setupStore()
@@ -11,11 +11,10 @@ const store = setupStore()
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
 root.render(
-	<React.StrictMode>
-		<Provider store={store}>
-			<App />
-		</Provider>
-	</React.StrictMode>
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>
 );
-
 

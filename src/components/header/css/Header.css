@@ -1,0 +1,27 @@
+.breadcrumb__item {
+	display: inline-block;
+	margin-left: 12px;
+	color: #828282;
+	font-family: 'SF UI Text';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 16px;
+	cursor: pointer
+}
+
+.breadcrumb__item:hover {
+	color: #000000
+}
+
+.breadcrumb__item.separator{
+	cursor:auto
+}
+
+.breadcrumb__item:first-child {
+	margin-left: 0px;
+}
+
+.breadcrumb__item.active {
+	color: #000000
+}

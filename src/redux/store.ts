@@ -1,10 +1,12 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import productCard from "./reducers/productCardSlice"
+import filterMaterialsSlice from "./reducers/filterMaterialsSlice";
+import productCardSlice from "./reducers/productCardSlice";
+
 
 const rootReducer = combineReducers({
-    productCard,
+	productCardSlice,
+	filterMaterialsSlice,
 })
-
 
 export const setupStore = () => {
     return configureStore({
