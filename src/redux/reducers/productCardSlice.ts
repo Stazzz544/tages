@@ -14,7 +14,6 @@ export const productCardSlice = createSlice({
 	name: 'productCard',
 	initialState,
 	reducers: {
-
 	}
 })
 
