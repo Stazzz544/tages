@@ -1,6 +1,4 @@
-.shelvingKits {
-}
-.shelvingKits__title {
+.shelving-kits__title {
 	font-family: 'SF Pro Display';
 	font-style: normal;
 	font-weight: 600;
@@ -8,7 +6,7 @@
 	line-height: 48px;
 }
 
-.shelvingKits__filters-wrapper{
+.shelving-kits__filters-wrapper{
 	display: flex;
 	column-gap: 24px;
 }

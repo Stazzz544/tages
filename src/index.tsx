@@ -1,4 +1,4 @@
-import React from "react";
+import axios from 'axios'
 import ReactDOM from "react-dom/client";
 import './css/index.css';
 import App from './App';
@@ -11,10 +11,8 @@ const store = setupStore()
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 
 root.render(
-  <React.StrictMode>
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>
 );
 

@@ -1,10 +1,13 @@
-export interface Materials {
-	"id": string,
-	"name": string,
+export type Material = {
+	id: string | null;
+	name: string;
 }
 
-export interface StateType {
-	materials: Materials[];
+export type Materials = Array<Material>
+
+export interface MaterialsState {
+	materials: Array<Material>;
+	currentFilter: string;
 	isloading: boolean;
 	error: string;
 }
