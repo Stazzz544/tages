@@ -1,8 +1,18 @@
 .dropdown{
 	width: 288px;
-	background: #F2F2F2;
 	position: relative;
 }
+
+.dropdown__discription{
+	margin-bottom: 8px;
+	margin-left: 16px;
+	letter-spacing: 0.03em;
+	color: #4F4F4F;
+	font-family: 'SF Pro Display';
+	font-style: normal;
+	font-weight: 400;
+}
+
 .dropdown__item{
 	display: flex;
 	align-items: center;
@@ -21,9 +31,16 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 8px 0 0;
+	background: #F2F2F2;
 }
 
 .dropdown__value {
+	letter-spacing: 0.03em;
+	font-family: 'SF Pro Display';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #000000;
 }
 
 .dropdown__arrow {

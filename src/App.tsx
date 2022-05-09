@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './components/header/Header';
+import Header from './components/Header/Header';
 import ShelvingKits from './components/ShelvingKits/ShelvingKits';
 import './css/App.css';
 

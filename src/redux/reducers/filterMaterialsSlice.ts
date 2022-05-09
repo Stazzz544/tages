@@ -1,10 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Material, MaterialsState,  } from "../models/IFilterMaterials";
+import { ProductCard } from "../models/IProductCard";
 
 
 export const initialState: MaterialsState = {
 	materials: [],
-	currentFilter: 'Металл', //default state in figma
+	filtredProductCards: [],
+	currentMaterialFilter: 'Металл', //default state in figma
 	isloading: false,
 	error: ''
 }
@@ -26,8 +28,15 @@ export const filterMaterialsSlice = createSlice({
 			state.error = action.payload;
 		},
 		changeCurrentFilter(state, action: PayloadAction<string>) {
-			state.currentFilter = action.payload;
-		}
+			state.currentMaterialFilter = action.payload;
+		},
+		filtredProductsDataFetchingSuccess(state, action: PayloadAction<ProductCard[]>) {
+			state.isloading = false;
+			state.error = '';
+			state.filtredProductCards = action.payload;
+		},
+
+		
 	}
 })
 
@@ -38,4 +47,5 @@ export const {
 	materialsFetchingSucces, 
 	materialsFetchingError,
 	changeCurrentFilter,
+	filtredProductsDataFetchingSuccess,
 } = filterMaterialsSlice.actions

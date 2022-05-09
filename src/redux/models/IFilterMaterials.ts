@@ -1,3 +1,5 @@
+import { ProductCard } from "./IProductCard";
+
 export type Material = {
 	id: string | null;
 	name: string;
@@ -7,7 +9,9 @@ export type Materials = Array<Material>
 
 export interface MaterialsState {
 	materials: Array<Material>;
-	currentFilter: string;
+	filtredProductCards: Array<ProductCard>
+	currentMaterialFilter: string;
 	isloading: boolean;
 	error: string;
 }
+
