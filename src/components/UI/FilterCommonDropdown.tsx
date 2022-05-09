@@ -13,7 +13,7 @@ const arrow = require("../../assets/dropdown/chevronBottom.svg") as any;
 
 const FilterMaterialDropdown  = () => {
 
-	const {currentfilterCommon, filtersCommon} = useAppSelector(state => state.filterCommonSlice)
+	const { currentfilterCommon, filtersCommon } = useAppSelector(state => state.filterCommonSlice)
 	const { filtredProductCards } = useAppSelector(state => state.filterMaterialsSlice)
 	const dispatch = useAppDispatch()
 

@@ -5,7 +5,9 @@ import { ProductCard, ProductCardState } from "../models/IProductCard";
 export const initialState: ProductCardState =  {
 	cards: [],
 	isloading: false,
-	error: ''
+	error: '',
+	basket: [],
+	favorite: [],
 }
 
 export const productCardSlice = createSlice({
@@ -22,7 +24,14 @@ export const productCardSlice = createSlice({
 		},
 		productsDataFetchingError(state, action: PayloadAction<string>) {
 			state.error = action.payload;
+		},
+		addToBusket(state, action: PayloadAction<Array<string>>) {
+			state.basket = action.payload;
+		},
+		addToFavorit(state, action: PayloadAction<Array<string>>) {
+			state.favorite = action.payload;
 		}
+
 	}
 })
 
@@ -32,4 +41,6 @@ export const {
 	productsDataFetching,
 	productsDataFetchingSuccess,
 	productsDataFetchingError,
+	addToBusket,
+	addToFavorit,
 } = productCardSlice.actions

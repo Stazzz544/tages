@@ -1,7 +1,7 @@
 import { ProductCard } from "./IProductCard";
 
 export type Material = {
-	id: string | null;
+	id: string;
 	name: string;
 }
 

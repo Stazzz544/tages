@@ -1,5 +1,5 @@
 export interface ProductCard {
-	id: string | null;
+	id: string;
 	name: string | null;
 	code: string | null;
 	price: {
@@ -18,4 +18,6 @@ export interface ProductCardState {
 	cards: ProductCard[];
 	isloading: boolean;
 	error: string;
+	basket: Array<string>
+	favorite: Array<string>
 }
