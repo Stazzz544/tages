@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks/redux";
 import { FilterCommon } from "../../redux/models/IFiltersCommon";
-import { productCards } from "../../redux/models/IProductCard";
 import { changeCurrentFilter } from "../../redux/reducers/filterCommonSlice";
 import { filtredProductsDataFetchingSuccess } from "../../redux/reducers/filterMaterialsSlice";
-import { productsDataFetchingSuccess } from "../../redux/reducers/productCardSlice";
 import "./css/FilterDropdown.css"
 
 const arrow = require("../../assets/dropdown/chevronBottom.svg") as any;

@@ -56,7 +56,7 @@ const ShelvingKitsProductCard = () => {
 			{productCards.filtredProductCards.map(card =>
 				<div key={card.id} className="product-card">
 					<div className="product-card__img-wrapper">
-						<img src={card.image.url ? card.image.url : ''} alt="" className="product-card__img" />
+						<img src={card.image.url ? '.' + card.image.url : ''} alt="product" className="product-card__img" />
 					</div>
 
 					<div className="product-card__code">{card.code ? card.code : ''}</div>
