@@ -67,4 +67,4 @@ const FilterMaterialDropdown  = () => {
 	)
 }
 
-export default FilterMaterialDropdowng
+export default FilterMaterialDropdown
