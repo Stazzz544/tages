@@ -63,9 +63,10 @@
 	overflow: hidden;
 	max-height: 0;
 	transition: 0.5s ease-out;
+	z-index: 2;
 }
 
 .dropdown__hidden-items.active{
 	max-height:100vh;
-	transition: 0.5s ease-in
+	transition: 0.5s ease-in;
 }

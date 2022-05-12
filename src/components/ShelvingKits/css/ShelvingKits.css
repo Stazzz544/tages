@@ -11,3 +11,11 @@
 	display: flex;
 	column-gap: 24px;
 }
+
+@media(max-width: 500px) {
+	.shelving-kits__filters-wrapper{
+		flex-direction: column;
+		row-gap: 30px;
+	}
+	
+}

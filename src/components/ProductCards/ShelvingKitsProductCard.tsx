@@ -88,7 +88,6 @@ const ShelvingKitsProductCard = () => {
 									inFavoritImg.default
 									:
 									favoritImg.default
-								
 								} 
 								alt="" 
 								className="product-card__img-button" />

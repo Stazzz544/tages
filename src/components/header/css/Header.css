@@ -1,13 +1,19 @@
+.breadcrumb{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 12px;
+	row-gap: 12px;
+}
+
 .breadcrumb__item {
-	display: inline-block;
-	margin-left: 12px;
 	color: #828282;
 	font-family: 'SF UI Text';
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 16px;
-	cursor: pointer
+	cursor: pointer;
+	white-space: nowrap;
 }
 
 .breadcrumb__item:hover {
